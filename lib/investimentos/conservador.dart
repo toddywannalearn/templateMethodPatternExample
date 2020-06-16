@@ -1,5 +1,5 @@
-import '../../interface/investimento.dart';
-import '../conta.dart';
+import '../interface/investimento.dart';
+import '../models/conta.dart';
 
 
 class Conservador implements IInvestimento{

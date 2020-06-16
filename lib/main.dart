@@ -1,17 +1,17 @@
-import 'models/impostos/icms.dart';
-import 'models/impostos/iss.dart';
-import 'models/impostos/iccc.dart';
-import 'models/impostos/ikvc.dart';
-import 'models/impostos/icpp.dart';
-import 'models/impostos/ihit.dart';
-import 'calculadorDeImposto.dart';
+import 'impostos/icms.dart';
+import 'impostos/iss.dart';
+import 'impostos/iccc.dart';
+import 'impostos/ikvc.dart';
+import 'impostos/icpp.dart';
+import 'impostos/ihit.dart';
+import 'impostos/calculadorDeImposto.dart';
 import 'models/orcamento.dart';
 import 'interface/imposto.dart';
-import 'realizadorDeInvestimento.dart';
-import 'models/investimentos/conservador.dart';
+import 'investimentos/realizadorDeInvestimento.dart';
+import 'investimentos/conservador.dart';
 import 'interface/investimento.dart';
-import 'models/investimentos/moderado.dart';
-import 'models/investimentos/arrojado.dart';
+import 'investimentos/moderado.dart';
+import 'investimentos/arrojado.dart';
 import 'models/conta.dart';
 
 void main() {
@@ -21,6 +21,7 @@ void main() {
   IImposto ikvc = IKVC();
   IImposto icpp = ICPP();
   IImposto ihit = IHIT();
+
   IInvestimento conservador = Conservador();
   IInvestimento moderado = Moderado();
   IInvestimento arrojado = Arrojado();
@@ -39,15 +40,15 @@ void main() {
   var calculador = CalculadorDeImposto();
   var calculadorInvestimento = RealizadorDeInvestimento();
 
-//  calculador.realizaCalculo(orcamento, icms);
-//  calculador.realizaCalculo(orcamento, iss);
-//  calculador.realizaCalculo(orcamento, iccc);
-//  calculador.realizaCalculo(orcamento, ikvc);
-//  calculador.realizaCalculo(orcamento, icpp);
+    calculador.realizaCalculo(orcamento, icms);
+    calculador.realizaCalculo(orcamento, iss);
+    calculador.realizaCalculo(orcamento, iccc);
+    calculador.realizaCalculo(orcamento, ikvc);
+    calculador.realizaCalculo(orcamento, icpp);
     calculador.realizaCalculo(orcamento, ihit);
 
 
-//  calculadorInvestimento.realizarInvestimento(conta, conservador);
-//  calculadorInvestimento.realizarInvestimento(conta, moderado);
-//  calculadorInvestimento.realizarInvestimento(conta, arrojado);
+  calculadorInvestimento.realizarInvestimento(conta, conservador);
+  calculadorInvestimento.realizarInvestimento(conta, moderado);
+  calculadorInvestimento.realizarInvestimento(conta, arrojado);
 }

@@ -1,5 +1,5 @@
-import '../../templateDeImpostoCondicional.dart';
-import '../orcamento.dart';
+import 'templateDeImpostoCondicional.dart';
+import '../models/orcamento.dart';
 
 class IHIT extends TemplateDeImpostoCondicional{
   @override

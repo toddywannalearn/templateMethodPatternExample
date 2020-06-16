@@ -1,5 +1,5 @@
-import 'models/conta.dart';
-import 'interface/investimento.dart';
+import '../models/conta.dart';
+import '../interface/investimento.dart';
 
 class RealizadorDeInvestimento{
   void realizarInvestimento(Conta conta, IInvestimento investimento){

@@ -1,5 +1,5 @@
-import 'interface/imposto.dart';
-import 'models/orcamento.dart';
+import '../interface/imposto.dart';
+import '../models/orcamento.dart';
 
 abstract class TemplateDeImpostoCondicional implements IImposto{
   @override

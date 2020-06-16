@@ -1,5 +1,5 @@
-import '../orcamento.dart';
-import '../../interface/imposto.dart';
+import '../models/orcamento.dart';
+import '../interface/imposto.dart';
 
 class ISS implements IImposto {
   @override
